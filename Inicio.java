@@ -5,7 +5,11 @@
 //Descripción: verifica si el dispositivo se encuentra encendido o apagado.
 
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Inicio{
     public static void main(String[] args){
@@ -16,11 +20,12 @@ public class Inicio{
         String opcion = "";
 
         //  Archivo CSV
-        try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\Users\MaJo\Documents\GitHub\Yee_Ejercicio6"))) {
             String line;
             List<String[]> allData = new ArrayList<>();
 
-            //Lee las líneas.
+            // :/
+            //Leer las líneas.
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(","); 
                 allData.add(values);
@@ -82,7 +87,7 @@ public class Inicio{
         System.out.println("");
         }
     }
-}
+
 
     
 

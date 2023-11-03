@@ -1,4 +1,4 @@
-dispositivo,modelo/marca,modo
+TipoDispositivo,modelo_marca,modo
 telefono,iphone,encendido
 telefono,samsung,apagado
 telefono,honor,encendido
